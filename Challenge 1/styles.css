@@ -45,23 +45,21 @@ h2 {
   max-width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 45% 25%;
+  grid-template-rows: 50% 33%;
   grid-template-areas:
     "img img aside"
     "title article aside";
   gap: 2rem;
 }
-.mainBox {
-  grid-area: img;
-}
+
 .titleImage {
+  grid-area: img;
   width: 100%;
   height: 100%;
 }
 .title {
   grid-area: title;
   max-height: 100%;
-  padding-top: 1rem;
 }
 aside {
   grid-area: aside;
@@ -69,7 +67,6 @@ aside {
   text-align: justify;
   padding: 0 1rem 1rem 1rem;
   max-width: 90%;
-  max-height: 90%;
 }
 .aside_a {
   color: hsl(36, 100%, 99%);
