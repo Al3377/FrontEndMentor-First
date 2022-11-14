@@ -4,3 +4,22 @@ body {
   max-width: 1440px;
   margin: auto;
 }
+a {
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+.navItem {
+  padding: 0 0.8rem;
+  color: hsl(233, 8%, 79%);
+  font-weight: 400;
+}
