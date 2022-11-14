@@ -9,7 +9,8 @@ body {
 }
 body,
 nav,
-.grid_container {
+.grid_container,
+.otherArticles {
   margin: auto;
 }
 a {
@@ -94,4 +95,15 @@ aside {
 
 .otherArticles {
   display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.artcl_img {
+  float: left;
+  width: 6rem;
+}
+.artcl {
+  border: 2px solid black;
 }
