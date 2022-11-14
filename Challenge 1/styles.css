@@ -45,7 +45,7 @@ h2 {
   max-width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50% 33%;
+  grid-template-rows: 50% 30%;
   grid-template-areas:
     "img img aside"
     "title article aside";
@@ -65,11 +65,13 @@ h2 {
   grid-area: article;
 }
 .main_text {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  color: hsl(236, 13%, 42%);
   margin: 0 0 1rem 0;
 }
 .btn {
   border: none;
+  margin-top: 1rem;
   height: 2.5rem;
   width: 10rem;
   background-color: hsl(5, 85%, 63%);
