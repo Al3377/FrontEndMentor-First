@@ -23,7 +23,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 0;
 }
@@ -61,6 +61,21 @@ h2 {
   grid-area: title;
   max-height: 100%;
 }
+.main_text_link {
+  grid-area: article;
+}
+.main_text {
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+}
+.btn {
+  border: none;
+  height: 2.5rem;
+  width: 10rem;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  letter-spacing: 0.2rem;
+}
 aside {
   grid-area: aside;
   background-color: black;
@@ -74,12 +89,7 @@ aside {
 .aside_p {
   color: hsl(233, 8%, 79%);
 }
-.main_text_link {
-  grid-area: article;
-}
-.main_text {
-  font-size: 1.1rem;
-}
+
 .otherArticles {
   display: flex;
 }
