@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
@@ -16,13 +19,22 @@ li {
   display: inline-block;
 }
 nav {
-  max-width: 80%;
+  max-width: 77%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 0;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  display: inline;
+}
+h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 2rem;
 }
 .navItem {
   padding: 0 0.8rem;
@@ -33,7 +45,7 @@ nav {
   max-width: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 60% 40%;
+  grid-template-rows: 45% 25%;
   grid-template-areas:
     "img img aside"
     "title article aside";
@@ -43,16 +55,33 @@ nav {
   grid-area: img;
 }
 .titleImage {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 .title {
   grid-area: title;
+  max-height: 100%;
+  padding-top: 1rem;
 }
 aside {
   grid-area: aside;
+  background-color: black;
+  text-align: justify;
+  padding: 0 1rem 1rem 1rem;
+  max-width: 90%;
+  max-height: 90%;
+}
+.aside_a {
+  color: hsl(36, 100%, 99%);
+}
+.aside_p {
+  color: hsl(233, 8%, 79%);
 }
 .main_text_link {
   grid-area: article;
+}
+.main_text {
+  font-size: 1.1rem;
 }
 .otherArticles {
   display: flex;
