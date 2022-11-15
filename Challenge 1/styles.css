@@ -16,6 +16,9 @@ nav,
 a {
   text-decoration: none;
 }
+a:hover {
+  color: hsl(5, 85%, 63%);
+}
 li {
   display: inline-block;
 }
@@ -84,6 +87,9 @@ h3 {
   color: white;
   letter-spacing: 0.2rem;
 }
+.btn:hover {
+  background-color: black;
+}
 aside {
   grid-area: aside;
   background-color: black;
@@ -120,4 +126,7 @@ aside {
   font-size: 1.5rem;
   color: hsl(233, 8%, 79%);
   font-weight: 700;
+}
+.artcl_link {
+  color: black;
 }
