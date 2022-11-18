@@ -191,3 +191,20 @@ aside {
     flex-direction: column;
   }
 }
+
+.new_container {
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: start;
+}
+.new_art {
+  width: auto;
+  height: auto;
+  background-color: aqua;
+  display: flex;
+  gap: 1rem;
+}
