@@ -6,14 +6,11 @@ body {
   font-size: 15px;
   max-width: 1440px;
   min-width: 375px;
+  padding: 1rem 2rem;
   height: auto;
+  margin-inline: 10%;
 }
-body,
-nav,
-.grid_container,
-.artcl_container {
-  margin: auto;
-}
+
 a {
   text-decoration: none;
 }
@@ -24,12 +21,12 @@ li {
   display: inline-block;
 }
 nav {
-  max-width: 77%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0;
 }
 h1 {
@@ -48,21 +45,23 @@ h3 {
 }
 hr {
   margin: 0;
+  color: hsl(233, 8%, 79%);
 }
+
 .navItem {
   padding: 0 0.8rem;
   color: hsl(233, 8%, 79%);
   font-weight: 400;
 }
 .grid_container {
-  max-width: 80%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   grid-template-areas:
     "img img aside"
     "title article aside";
-  gap: 2rem;
+  gap: 1.6rem;
 }
 
 .titleImage {
@@ -72,10 +71,12 @@ hr {
 }
 .title {
   grid-area: title;
+  padding-right: 2.7rem;
   height: auto;
 }
 .main_text_link {
   grid-area: article;
+  font-size: 1.1rem;
 }
 .main_text {
   color: hsl(236, 13%, 42%);
@@ -96,43 +97,34 @@ aside {
   grid-area: aside;
   background-color: black;
   text-align: justify;
-  padding: 0 1rem 1rem 1rem;
-  max-width: 90%;
-  height: auto;
+  padding: 2rem 1.3rem;
 }
-.aside_a,
-.aside_p {
+.aside_a {
   color: hsl(36, 100%, 99%);
 }
-
-.artcl_container {
-  max-width: 80%;
-  gap: 1rem;
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0;
+.aside_p {
+  color: hsl(233, 8%, 79%);
 }
+.new_container {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+  justify-items: start;
+  line-height: 1;
+}
+.new_art {
+  display: flex;
+  gap: 1rem;
+}
+
 .artcl_img {
   width: 6rem;
 }
-.artc_text {
-  text-align: justify;
-  width: 12rem;
-}
-
-.artcl_box {
-  float: right;
-}
-.img_box {
-  float: left;
-  padding-right: 13px;
-  width: auto;
-}
 
 .artcl_number {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: hsl(233, 8%, 79%);
   font-weight: 700;
 }
@@ -187,24 +179,4 @@ aside {
   .main_text_link {
     grid-area: main-text-buton;
   }
-  .artcl_container {
-    flex-direction: column;
-  }
-}
-
-.new_container {
-  max-width: 80%;
-  height: auto;
-  margin: auto;
-  background-color: antiquewhite;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: start;
-}
-.new_art {
-  width: auto;
-  height: auto;
-  background-color: aqua;
-  display: flex;
-  gap: 1rem;
 }
