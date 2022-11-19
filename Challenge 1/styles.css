@@ -9,6 +9,7 @@ body {
   padding: 1rem 2rem;
   height: auto;
   margin-inline: 10%;
+  background-color: hsl(36, 100%, 99%);
 }
 
 a {
@@ -42,10 +43,6 @@ h2 {
 h3 {
   display: inline-block;
   margin-bottom: 0;
-}
-hr {
-  margin: 0;
-  color: hsl(233, 8%, 79%);
 }
 
 .navItem {
@@ -103,7 +100,12 @@ aside {
   color: hsl(36, 100%, 99%);
 }
 .aside_p {
-  color: hsl(233, 8%, 79%);
+  color: hsl(236, 13%, 42%);
+}
+.line {
+  border: none;
+  height: 1px;
+  background: hsl(236, 13%, 42%);
 }
 .new_container {
   max-width: 100%;
@@ -131,9 +133,49 @@ aside {
 .artcl_link {
   color: black;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1024px) {
   body {
-    width: 375px;
+    margin-inline: 0;
+    padding: 0.5rem 1rem;
+  }
+  h1 {
+    font-size: 2.7rem;
+  }
+  .grid_container {
+    gap: 1rem;
+  }
+  .title {
+    padding-right: 1rem;
+    line-height: 1;
+  }
+  .aside {
+    padding: 0rem 0.5rem;
+  }
+  .new_container {
+    gap: 0;
+    line-height: 1;
+  }
+  .new_art {
+    gap: 0.4rem;
+  }
+  .artcl_link {
+    position: relative;
+    bottom: 0.7rem;
+  }
+  .artcl_number {
+    font-size: 1rem;
+  }
+  .artcl_text {
+    margin: 0.5rem;
+    position: relative;
+    bottom: 0.8em;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  body {
+    margin-inline: 0;
+    padding: 0.5rem 1rem;
   }
   h1 {
     font-size: 2.8rem;
@@ -148,7 +190,6 @@ aside {
   }
 
   .grid_container {
-    width: 100%;
     margin: auto;
     grid-template-columns: 350px;
     grid-template-rows: repeat(6, auto);
@@ -160,6 +201,7 @@ aside {
       "other";
     gap: 1rem;
     padding: 0;
+    justify-content: center;
   }
 
   ul {
@@ -178,5 +220,13 @@ aside {
   }
   .main_text_link {
     grid-area: main-text-buton;
+  }
+  .new_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1em;
+  }
+  .artcl_number {
+    font-size: 2rem;
   }
 }
