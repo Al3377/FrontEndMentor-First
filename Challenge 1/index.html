@@ -29,9 +29,15 @@
           />
         </svg>
       </div>
+      <input type="checkbox" id="toggle" />
+      <label class="burger_toggle" for="toggle">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+      </label>
       <ul class="navList">
-        <li class="navItem"><a class="nav_a" href="">Home</a></li>
-        <li class="navItem"><a class="nav_a" href="">New</a></li>
+        <li class="navItem"><a class="nav_a" href="#home">Home</a></li>
+        <li class="navItem"><a class="nav_a" href="#new">New</a></li>
         <li class="navItem"><a class="nav_a" href="">Popular</a></li>
         <li class="navItem"><a class="nav_a" href="">Trending</a></li>
         <li class="navItem"><a class="nav_a" href="">Categories</a></li>
@@ -47,7 +53,7 @@
         src="assets\images\image-web-3-desktop.jpg"
         alt=""
       />
-      <div class="title">
+      <div class="title" id="home">
         <h1>
           The Bright <br />
           Future of <br />
@@ -64,7 +70,7 @@
         <button class="btn">READ MORE</button>
       </div>
 
-      <aside>
+      <aside id="new">
         <h2>New</h2>
         <a class="aside_a" href=""><h3>Hydrogen VS Electric Cars</h3></a>
         <p class="aside_p">Will hydrogen-fueld cars ever catch up to EVs?</p>

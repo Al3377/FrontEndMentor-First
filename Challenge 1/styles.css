@@ -11,7 +11,10 @@ body {
   margin-inline: 10%;
   background-color: hsl(36, 100%, 99%);
 }
-
+input,
+.burger_toggle {
+  display: none;
+}
 a {
   text-decoration: none;
 }
@@ -187,6 +190,36 @@ aside {
   }
   nav {
     width: 100%;
+    position: relative;
+  }
+  .navList {
+    display: none;
+  }
+  .bar {
+    display: block;
+    padding-bottom: 0.4rem;
+    margin: 5px 2px;
+    width: 50px;
+    background-color: black;
+  }
+  .burger_toggle {
+    display: block;
+    position: absolute;
+    left: 20rem;
+    padding-right: 1rem;
+    z-index: 1;
+  }
+  input:checked ~ .navList {
+    display: grid;
+    position: absolute;
+
+    background-color: hsl(233, 8%, 79%);
+    opacity: 90%;
+    padding: 1rem;
+    height: 15rem;
+    width: 10rem;
+    left: 13.3rem;
+    font-size: 1.2rem;
   }
 
   .grid_container {
