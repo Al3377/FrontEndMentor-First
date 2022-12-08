@@ -175,7 +175,7 @@ aside {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 550px) {
   body {
     margin-inline: 0;
     padding: 0.5rem 1rem;
@@ -212,7 +212,6 @@ aside {
   input:checked ~ .navList {
     display: grid;
     position: absolute;
-
     background-color: hsl(233, 8%, 79%);
     opacity: 90%;
     padding: 1rem;
